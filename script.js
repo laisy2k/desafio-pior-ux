@@ -4,6 +4,7 @@ const telaConfirmacao = document.getElementById("telaConfirmacao");
 const finalizar = document.getElementById("finalizar");
 const telaFinal = document.getElementById("telaFinal");
 const telaCadastro = document.getElementById("telaCadastro");
+const voltar = document.getElementById("voltar");
 
 formulario.addEventListener("submit", function(event) {
     event.preventDefault();
@@ -52,6 +53,9 @@ const cancelar = document.getElementById("cancelar");
 
 cancelar.addEventListener("click", function() {
     alert("Cadastro realizado com sucesso!");
+
+    document.getElementById("nome").value = "";
+    document.getElementById("email").value = "";
 });
 
 let vezesQueFugiu = 0;
@@ -70,4 +74,14 @@ continuarSenha.addEventListener("mouseover", function() {
         vezesQueFugiu++;
     }
 
+});
+voltar.addEventListener("click", function() {
+    telaConfirmacao.style.display = "none";
+    telaSenha.style.display = "block";
+
+    senha.value = "";
+    vezesQueFugiu = 0;
+
+    continuarSenha.style.left = "0px";
+    continuarSenha.style.top = "0px";
 });
