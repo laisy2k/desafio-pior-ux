@@ -34,9 +34,20 @@
         <h1>Quase terminando...</h1>
 
         <p>Agora crie uma senha.</p>
+        <p class="dica-senha">
+    Sua senha deve seguir os requisitos de segurança.
+    Boa sorte descobrindo quais são.
+</p>
 
         <label for="senha">Senha:</label>
         <input type="password" id="senha">
+
+        <div class="termos-confusos">
+    <input type="checkbox" id="termos">
+    <label for="termos">
+        Desmarque esta opção caso não queira deixar de não confirmar seus dados.
+    </label>
+</div>
 
         <button type="button" id="continuarSenha">Continuar</button>
 
@@ -44,14 +55,22 @@
 
     <div id="telaConfirmacao" style="display: none;">
 
-        <h1>Confirme seus dados</h1>
+    <h1>Confirme seus dados</h1>
 
-        <p>Seu cadastro está quase concluído.</p>
+    <p>Seu cadastro está quase concluído.</p>
 
-        <button type="button" id="finalizar">Não, está tudo errado</button>
-        <button type="button" id="voltar">Sim, está tudo certo</button>
+    <div class="termos-confusos">
+        <input type="checkbox" id="termos">
 
+        <label for="termos">
+            Desmarque esta opção caso não queira deixar de não confirmar seus dados.
+        </label>
     </div>
+
+    <button type="button" id="finalizar">Não, está tudo errado</button>
+    <button type="button" id="voltar">Sim, está tudo certo</button>
+
+</div>
 
     <div id="telaFinal" style="display: none;">
 

@@ -5,6 +5,7 @@ const finalizar = document.getElementById("finalizar");
 const telaFinal = document.getElementById("telaFinal");
 const telaCadastro = document.getElementById("telaCadastro");
 const voltar = document.getElementById("voltar");
+const termos = document.getElementById("termos");
 
 formulario.addEventListener("submit", function(event) {
     event.preventDefault();
@@ -32,7 +33,7 @@ continuarSenha.addEventListener("click", function() {
 
     if (!/[0-9]/.test(senha.value)) {
         alert("Erro: a senha precisa conter um número.");
-
+        senha.value = "";
         return;
     }
 
@@ -44,9 +45,13 @@ continuarSenha.addEventListener("click", function() {
 
 finalizar.addEventListener("click", function() {
 
+    if (!termos.checked) {
+        alert("Erro: para não prosseguir, não deixe de confirmar a opção.");
+        return;
+    }
+
     telaConfirmacao.style.display = "none";
     telaFinal.style.display = "block";
-
 });
 
 const cancelar = document.getElementById("cancelar");

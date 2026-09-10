@@ -106,3 +106,24 @@ button {
     font-size: 18px;
     padding: 15px 25px;
 }
+.dica-senha {
+    font-size: 11px;
+    color: #d4d4d4;
+    text-align: right;
+    margin-bottom: 25px;
+}
+
+.termos-confusos {
+    margin-top: 30px;
+    text-align: left;
+    font-size: 12px;
+}
+
+.termos-confusos input {
+    width: auto;
+}
+
+.termos-confusos label {
+    display: inline;
+    color: #6b00ff;
+}
