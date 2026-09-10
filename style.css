@@ -1,45 +1,81 @@
 body {
-    background-color: white;
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 20px;
+    min-height: 100vh;
+    font-family: "Comic Sans MS", Arial, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #ff66cc,
+        #7cff00,
+        #00ffff,
+        #ffcc00
+    );
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#telaCadastro,
+#telaSenha,
+#telaConfirmacao,
+#telaFinal {
+    width: 380px;
+    padding: 35px;
+
+    background-color: #fff7a8;
+
+    border: 8px dotted #8a2be2;
+    border-radius: 3px;
+
+    box-shadow: 12px 12px 0px #ff1493;
+
+    text-align: center;
 }
 
 h1 {
-    color: #eeeeee;
+    color: #ff00aa;
+    font-size: 32px;
+    transform: rotate(-2deg);
 }
 
 p {
-    color: #dddddd;
-}
-
-form {
-    width: 300px;
+    color: #49a078;
+    font-size: 15px;
 }
 
 label {
     display: block;
-    margin-top: 20px;
-    color: #eeeeee;
+
+    margin-top: 25px;
+    margin-bottom: 3px;
+
+    text-align: left;
+
+    color: #c8c8c8;
 }
 
 input {
-    width: 100%;
-    padding: 8px;
-}
+    width: 90%;
 
-button {
-    margin-top: 30px;
-    padding: 15px;
-    border: none;
-    background-color: #777777;
-    color: white;
+    padding: 12px;
+
+    background-color: #dbe8ff;
+
+    border: 3px solid black;
+
+    font-size: 15px;
 }
 
 button {
     cursor: pointer;
-}
 
+    margin-top: 30px;
+
+    border: none;
+
+    font-weight: bold;
+}
 #cancelar {
     background-color: limegreen;
     color: white;
