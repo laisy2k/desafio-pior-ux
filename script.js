@@ -31,7 +31,7 @@ continuarSenha.addEventListener("click", function() {
 
     if (!/[0-9]/.test(senha.value)) {
         alert("Erro: a senha precisa conter um número.");
-        
+
         return;
     }
 
@@ -52,4 +52,22 @@ const cancelar = document.getElementById("cancelar");
 
 cancelar.addEventListener("click", function() {
     alert("Cadastro realizado com sucesso!");
+});
+
+let vezesQueFugiu = 0;
+
+continuarSenha.addEventListener("mouseover", function() {
+
+    if (vezesQueFugiu < 2) {
+        continuarSenha.style.position = "relative";
+
+        continuarSenha.style.left =
+            Math.floor(Math.random() * 200) + "px";
+
+        continuarSenha.style.top =
+            Math.floor(Math.random() * 100) + "px";
+
+        vezesQueFugiu++;
+    }
+
 });
