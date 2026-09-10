@@ -128,7 +128,7 @@ A tela de confirmação deveria apresentar os dados informados anteriormente e u
 Por fim, a interface deveria utilizar uma paleta de cores consistente, contraste adequado, tipografia legível e organização visual que facilite a identificação das informações e ações disponíveis.
 
 
-## ▶ Como Executar
+## Como Executar
 
 1. Faça o download ou clone este repositório.
 2. Abra a pasta do projeto.
