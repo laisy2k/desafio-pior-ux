@@ -1,10 +1,14 @@
 const formulario = document.getElementById("cadastroForm");
 const telaSenha = document.getElementById("telaSenha");
+const telaConfirmacao = document.getElementById("telaConfirmacao");
+const finalizar = document.getElementById("finalizar");
+const telaFinal = document.getElementById("telaFinal");
+const telaCadastro = document.getElementById("telaCadastro");
 
 formulario.addEventListener("submit", function(event) {
     event.preventDefault();
 
-    formulario.style.display = "none";
+    telaCadastro.style.display = "none";
     telaSenha.style.display = "block";
 });
 
@@ -29,4 +33,14 @@ continuarSenha.addEventListener("click", function() {
     }
 
     alert("Senha aceita!");
+
+    telaSenha.style.display = "none";
+    telaConfirmacao.style.display = "block";
+});
+
+finalizar.addEventListener("click", function() {
+
+    telaConfirmacao.style.display = "none";
+    telaFinal.style.display = "block";
+
 });
