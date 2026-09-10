@@ -19,16 +19,19 @@ continuarSenha.addEventListener("click", function() {
 
     if (senha.value.length < 8) {
         alert("Erro: a senha precisa ter pelo menos 8 caracteres.");
+        senha.value = "";
         return;
     }
 
     if (!/[A-Z]/.test(senha.value)) {
         alert("Erro: a senha precisa conter uma letra maiúscula.");
+        senha.value = "";
         return;
     }
 
     if (!/[0-9]/.test(senha.value)) {
         alert("Erro: a senha precisa conter um número.");
+        
         return;
     }
 
