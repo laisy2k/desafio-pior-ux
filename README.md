@@ -142,4 +142,4 @@ O projeto utiliza apenas **HTML, CSS e JavaScript**, portanto não é necessári
 
 O projeto também pode ser acessado diretamente pelo GitHub Pages:
 
-**Link:** [adicionar aqui após a publicação do projeto.](https://laisy2k.github.io/desafio-pior-ux/)
+**Link:** [Link do pior site do mundo](https://laisy2k.github.io/desafio-pior-ux/)
