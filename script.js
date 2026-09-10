@@ -44,3 +44,9 @@ finalizar.addEventListener("click", function() {
     telaFinal.style.display = "block";
 
 });
+
+const cancelar = document.getElementById("cancelar");
+
+cancelar.addEventListener("click", function() {
+    alert("Cadastro realizado com sucesso!");
+});
